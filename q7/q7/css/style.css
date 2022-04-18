@@ -1,1 +1,37 @@
 @charset "UTF-8";
+
+.wrapper {
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 500px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+  background: #fad296;
+  border: solid 5px #8f5a0a;
+  border-radius: 30px;
+}
+
+.box::before,
+.box::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25px;
+}
+
+.box::before {
+  border: solid 25px transparent;
+  border-top: solid 25px #8f5a0a;
+}
+.box::after {
+  border: solid 23px transparent;
+  border-top: solid 23px #fad296;
+  margin-top: -5px;
+  margin-left: 2px;
+}
