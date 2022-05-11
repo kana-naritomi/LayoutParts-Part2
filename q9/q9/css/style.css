@@ -2,3 +2,127 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+
+.fade-in,
+.fade-out,
+.roll {
+  width: 200px;
+  height: 200px;
+  background: #76ff826b;
+  margin: 0 auto;
+}
+
+.fade-in {
+  animation: fadeIn 4s ;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.fade-out {
+  animation: fadeout 4s linear 4s;
+}
+@keyframes fadeout {
+  100% {opacity: 0}
+}
+
+.roll {
+  animation: rotation1 4s linear infinite;
+}
+@keyframes rotation1 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+.hover > div {
+  width: 200px;
+  height: 200px;
+  background: #331aefd0;
+  margin: 0 auto;
+  transition: .5s;
+}
+
+.h-color {
+  transition: background .5s;
+}
+.h-color:hover {
+  background: #ff27e2c9;
+}
+
+.h-rotation:hover {
+  transform: rotate(360deg);
+}
+
+.h-up:hover {
+  transform: translate(0, -20%);
+}
+
+.h-right:hover {
+  transform: translate(50%, 0);
+}
+
+.h-vertical:hover {
+  height: 300px;
+}
+
+.h-beside:hover {
+  width: 500px;
+}
+
+.h-border {
+  box-sizing: border-box;
+}
+.h-border:hover {
+  /* outline: 10px #00ffe5 solid;
+  outline-offset: -10px; */
+  border: solid 10px #00ffe5;
+}
+
+.h-shadow:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+}
+
+
+.loading {
+  width: 50px;
+  height: 50px;
+  border: solid 10px #ecf1f2;
+  border-top: solid 10px #14ff4bcd;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: rotation1 1.1s linear infinite;
+}
+@keyframes rotation1 {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+.c-wrapper {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.cards {
+  border: solid 1px #000;
+  width: 300px;
+  padding: 20px;
+  margin-left:-1px;
+  margin-top:-1px;
+  transition: .5s;
+}
+.cards-bg {
+  background: url(https://picsum.photos/id/1005/200/300) #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.cards:hover {
+  box-shadow: 0px 0px 10px 3px #424242d0;
+}
