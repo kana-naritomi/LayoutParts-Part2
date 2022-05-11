@@ -1,1 +1,93 @@
 @charset "UTF-8";
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 0 15px;
+  padding: 0 15px;
+  line-height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.red {
+  color: #fff;
+  background: #fd0f0fd9;
+}
+.blue {
+  color: #fff;
+  background: #170ffdd9;
+}
+.green {
+  color: #000;
+  background: #0ffd0fd9;
+}
+
+
+.shadow > .red {
+  box-shadow: 0 5px rgb(59, 7, 7, 0.9);
+}
+.shadow > .blue {
+  box-shadow: 0 5px rgb(8, 8, 87, 0.9);
+}
+.shadow > .green {
+  box-shadow: 0 5px rgb(4, 53, 2, 0.9);
+}
+
+
+.push > .red {
+  box-shadow: 0 5px rgb(59, 7, 7, 0.9);
+}
+.push > .blue {
+  box-shadow: 0 5px rgb(8, 8, 87, 0.9);
+}
+.push > .green {
+  box-shadow: 0 5px rgb(4, 53, 2, 0.9);
+}
+
+.push > .red:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+.push > .blue:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+.push > .green:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+
+
+.color,.dot {
+  color: #67c5ff;
+}
+.color {
+  border: double 4px #67c5ff;
+  transition: background .5s;
+}
+.dot {
+  border: dotted 4px #67c5ff;
+}
+.b-w {
+  color: #0079a5f8;
+  border: dashed 4px #67c5ff;
+  background: #d0edfff8;
+  transition: .5s;
+}
+
+.color:hover {
+  background: #fffbef;
+}
+.dot:hover {
+  border: dashed 4px #67c5ff;
+}
+.b-w:hover {
+  background: #fff;
+  color: #67c5ff;
+}
